@@ -1,16 +1,19 @@
-import React from "react";
+import React, {FC} from "react";
 import "@styles/global.scss";
 import Container from "@components/container/Container";
 import Header from "@components/header/Header";
 import Balance from "@components/balance/Balance";
+import {BalanceContext, balanceDefaultValue} from "@context/BalanceContext";
 
-const App: React.FC = () => {
+const App: FC = () => {
     return (
         <div className="App">
-            <Container>
-                <Header/>
-                <Balance/>
-            </Container>
+            <BalanceContext.Provider value={balanceDefaultValue}>
+                <Container>
+                    <Header/>
+                    <Balance/>
+                </Container>
+            </BalanceContext.Provider>
         </div>
     );
 };

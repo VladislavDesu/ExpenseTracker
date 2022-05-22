@@ -1,19 +1,28 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./*"
+        "src/*"
       ],
       "@assets/*": [
-        "./assets/*"
+        "src/assets/*"
       ],
       "@styles/*": [
-        "./assets/styles/*"
+        "src/assets/styles/*"
       ],
       "@components/*": [
-        "./components/*"
+        "src/components/*"
       ],
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
     }
   },
   "exclude": [
