@@ -1,0 +1,9 @@
+@import "../../assets/styles/helpers/utils";
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 15px;
+}

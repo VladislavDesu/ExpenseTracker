@@ -1,10 +1,14 @@
 import React from "react";
 import "@styles/global.scss";
+import Container from "@components/container/Container";
+import Header from "@components/header/Header";
 
 const App: React.FC = () => {
     return (
         <div className="App">
-            <h1>Hello World!</h1>
+            <Container>
+                <Header/>
+            </Container>
         </div>
     );
 };
