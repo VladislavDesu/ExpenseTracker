@@ -3,3 +3,10 @@ export interface IBalanceContext {
     income: number,
     expense: number
 }
+
+export interface IHistoryCard {
+    id?: number,
+    title: string,
+    value: number,
+    status: boolean
+}

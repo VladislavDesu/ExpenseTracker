@@ -1,0 +1,8 @@
+@import "src/assets/styles/helpers/utils";
+
+.card {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: $white;
+  box-shadow: 0 4px 6px 0 $gray-100;
+}

@@ -17,16 +17,9 @@
       "@context/*": [
         "src/context/*"
       ],
-      "@types/*": [
-        "src/types/*"
-      ],
       "@utils/*": [
         "src/utils/*"
       ]
     }
-  },
-  "exclude": [
-    "node_modules",
-    "**/node_modules/*"
-  ]
+  }
 }
