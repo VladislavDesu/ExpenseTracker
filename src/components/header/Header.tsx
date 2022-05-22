@@ -1,5 +1,5 @@
 import React, {FC} from "react";
-import cl from "./header.module.scss"
+import cl from "./Header.module.scss"
 
 const Header: FC = () => {
     return (

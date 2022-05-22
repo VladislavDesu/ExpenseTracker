@@ -1,0 +1,68 @@
+@import "src/assets/styles/helpers/utils";
+
+.balance {
+  padding: 40px 0 0;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.count {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+
+  &_small {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &_plus {
+    color: $plus;
+  }
+
+  &_minus {
+    color: $minus;
+  }
+}
+
+.top {
+  margin: 0 0 40px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: $white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px 0 $gray-100;
+
+  &_title {
+
+  }
+
+  &_count {
+
+  }
+
+  > * {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+
+    &:not(:last-child) {
+      border-right: 2px solid $gray-100;
+    }
+  }
+}
