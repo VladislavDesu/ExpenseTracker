@@ -5,6 +5,7 @@ import Header from "@components/header/Header";
 import Balance from "@components/balance/Balance";
 import {BalanceContext, balanceDefaultValue} from "@context/BalanceContext";
 import History from "@components/history/History";
+import Transaction from "@components/transaction/Transaction";
 
 const App: FC = () => {
     return (
@@ -14,6 +15,7 @@ const App: FC = () => {
                     <Header/>
                     <Balance/>
                     <History/>
+                    <Transaction/>
                 </Container>
             </BalanceContext.Provider>
         </div>

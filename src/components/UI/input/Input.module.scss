@@ -1,0 +1,9 @@
+@import "src/assets/styles/helpers/utils";
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid $gray-100;
+  background-color: $white;
+}
