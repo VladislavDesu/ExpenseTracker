@@ -1,37 +1,30 @@
-import React, {FC, useState} from "react";
+import React, {FC, useContext} from "react";
 import Title from "@components/title/Title";
 import cl from "./History.module.scss";
 import HistoryCard from "@components/UI/card/HistoryCard";
+import {defaultTransactionContext, TransactionContext} from "@context/TransactionContext";
 
 const History: FC = () => {
-    const [histories, setHistories] = useState([
-        {
-            id: 0,
-            title: "Book",
-            value: 100,
-            status: true
-        },
-        {
-            id: 1,
-            title: "Book",
-            value: 100,
-            status: true
-        }
-    ]);
+    const context: defaultTransactionContext = useContext(TransactionContext);
 
     return (
-        <div className={cl.history}>
-            <Title title={"History"}/>
+        <>
+            {
+                context?.histories.length !== 0 ? <div className={cl.history}>
+                    <Title title={"History"}/>
 
-            <ul className={cl.list}>
-                {
-                    histories.map(history => <li key={history.id}>
-                        <HistoryCard status={history.status} value={history.value} title={history.title}/>
-                    </li>)
-                }
-            </ul>
-        </div>
-    );
+                    <ul className={cl.list}>
+                        {
+                            context?.histories.map(history => <li key={history.id}>
+                                <HistoryCard id={history.id} text={history.text} amount={history.amount}/>
+                            </li>)
+                        }
+                    </ul>
+                </div> : null
+            }
+
+        </>
+    )
 };
 
 export default History;
